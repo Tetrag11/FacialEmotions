@@ -1,0 +1,35 @@
+======================================================================
+DATASET COMPARISON REPORT: JAFFE vs CK+
+Facial Emotion Recognition using SVM with HOG Features
+======================================================================
+
+DATASET SIZES
+--------------------------------------------------
+Dataset         Train (Balanced)     Test           
+JAFFE           175                  43             
+CK+             1194                 186            
+
+OVERALL ACCURACY
+--------------------------------------------------
+Dataset         Training        Testing         Gap            
+JAFFE           100.00          81.40           18.60          
+CK+             100.00          98.39           1.61           
+
+PER-CLASS TEST ACCURACY (%)
+--------------------------------------------------
+Emotion         JAFFE           CK+             Difference     
+Angry           83.3            88.9            5.6++++++++++++
+Disgust         66.7            100.0           33.3+++++++++++
+Fear            71.4            100.0           28.6+++++++++++
+Happy           100.0           100.0           0.0++++++++++++
+Sad             66.7            100.0           33.3+++++++++++
+Surprise        100.0           100.0           0.0++++++++++++
+
+JAFFE only emotions: Neutral
+
+KEY OBSERVATIONS
+--------------------------------------------------
+1. CK+ has 6.8x more training samples than JAFFE
+2. JAFFE shows moderate generalization (train-test gap: 18.6%)
+3. CK+ shows good generalization (train-test gap: 1.6%)
+4. CK+ outperforms JAFFE by 17.0% on test accuracy
